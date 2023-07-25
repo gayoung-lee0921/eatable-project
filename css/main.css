@@ -16,7 +16,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 header {
@@ -63,7 +64,7 @@ header .login {
 .login li:nth-of-type(1) {
   border-right: 1px solid #686868;
 }
-
+/* header end */
 .search {
   display: flex;
   align-items: center;
@@ -88,6 +89,7 @@ header .login {
 .search i {
   font-size: 24px;
 }
+/* search end */
 .update {
   border: 1px solid #111;
   margin: 50px 0;
@@ -155,3 +157,72 @@ header .login {
   background-color: #e78111;
   transition: all 0.5s;
 }
+/* update end */
+.news{
+  width: 100%;
+  height: auto;
+  padding: 0 38px;
+  border: 1px solid #111;
+  box-sizing: border-box;
+}
+.news h2{
+  margin-bottom: 20px;
+}
+.news .content{
+  width: 100%;
+  height: 300px;
+  border: 1px solid #111;
+  display: flex;
+}
+.content .more-news{
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.more-news img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.92);
+}
+.more-news a{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  height: auto;
+} 
+.more-news a i{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #111;
+  border-radius: 100%;
+  text-align: center;
+  margin-left: 20px;
+  line-height: 30px;
+}
+.news .news-content{
+  width: 40%;
+  height: 100%;
+  padding: 30px 50px;
+  box-sizing: border-box;
+}
+.news-content table{
+  width: 100%;
+  height: 100%;
+}
+
+.news-content .news-title{
+  width: 80%;
+  font-weight: 900;
+  
+}
+.news-content .news-date{
+  width: 20%;
+  font-size: 14px;
+}
+.news .ranking{
+  width: 30%;
+}  
