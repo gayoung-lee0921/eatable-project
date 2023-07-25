@@ -1,0 +1,115 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans Korean", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+header {
+  padding: 0 38px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb {
+  display: flex;
+  padding-left: 0;
+}
+.gnb li {
+  height: 100%;
+  position: relative;
+}
+.gnb a {
+  display: inline-block;
+  padding: 15px 50px;
+}
+.gnb li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 100%;
+  opacity: 0;
+  transform: translateX(10%);
+}
+.gnb li:hover::before {
+  width: 80%;
+  background-color: #e78111;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+header .login {
+  display: flex;
+  color: #686868;
+}
+.login li {
+  padding: 0 20px;
+}
+.login li:nth-of-type(1) {
+  border-right: 1px solid #686868;
+}
+.board {
+  width: 80%;
+  margin: 0 auto;
+  padding: 70px 38px;
+}
+table,
+tr,
+th,
+td {
+  border: 1px solid #888;
+}
+
+table {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+tr td:nth-of-type(2) {
+  text-align: start;
+}
+td {
+  padding: 15px;
+}
+.board .board-pagination {
+  text-align: center;
+  padding: 10px 0;
+}
+.board-pagination a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #888;
+  margin: 5px;
+}
+.board-pagination a:hover {
+  background-color: #e78111;
+  color: #fff;
+}
+footer {
+  width: 100%;
+  padding: 20px 38px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: rgba(31, 31, 31, 0.4);
+}
+footer p {
+  margin: 5px 0;
+}

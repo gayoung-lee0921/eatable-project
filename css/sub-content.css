@@ -1,0 +1,142 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans Korean", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+header {
+  padding: 0 38px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gnb {
+  display: flex;
+  padding-left: 0;
+}
+.gnb li {
+  height: 100%;
+  position: relative;
+}
+.gnb a {
+  display: inline-block;
+  padding: 15px 50px;
+}
+.gnb li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 100%;
+  opacity: 0;
+  transform: translateX(10%);
+}
+.gnb li:hover::before {
+  width: 80%;
+  background-color: #e78111;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+header .login {
+  display: flex;
+  color: #686868;
+}
+.login li {
+  padding: 0 20px;
+}
+.login li:nth-of-type(1) {
+  border-right: 1px solid #686868;
+}
+/* header end */
+
+.sub-content {
+  width: 80%;
+  height: auto;
+  margin: 70px auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px 38px;
+  box-shadow: 0 0 5px;
+  border-radius: 20px;
+}
+.sub-content .img-box {
+  width: 45%;
+  height: 500px;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+.sub-content .text-box {
+  width: 50%;
+}
+.text-box div:nth-of-type(1) {
+  margin: 0;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.title > p {
+  font-size: 30px;
+  font-weight: 900;
+}
+.title .category {
+  display: flex;
+}
+.category div {
+  display: flex;
+  align-items: center;
+  background-color: #e78111;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.category div:nth-of-type(1) {
+  margin-right: 5px;
+}
+.nutrient,
+.effect,
+.caution,
+.recommend {
+  margin: 10px 0;
+}
+div > h3 {
+  margin-bottom: 5px;
+}
+div > ul > li {
+  padding: 5px 0;
+}
+footer {
+  width: 100%;
+  padding: 20px 38px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: rgba(31, 31, 31, 0.4);
+}
+footer p {
+  margin: 5px 0;
+}

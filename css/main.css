@@ -91,7 +91,6 @@ header .login {
 }
 /* search end */
 .update {
-  border: 1px solid #111;
   margin: 50px 0;
   padding: 20px 38px;
 }
@@ -158,33 +157,33 @@ header .login {
   transition: all 0.5s;
 }
 /* update end */
-.news{
+.news {
   width: 100%;
   height: auto;
   padding: 0 38px;
-  border: 1px solid #111;
   box-sizing: border-box;
+  margin: 50px 0;
 }
-.news h2{
+.news h2 {
   margin-bottom: 20px;
 }
-.news .content{
+.news .content {
   width: 100%;
   height: 300px;
-  border: 1px solid #111;
   display: flex;
+  align-items: center;
 }
-.content .more-news{
+.content .more-news {
   width: 30%;
   height: 100%;
   position: relative;
 }
-.more-news img{
+.more-news img {
   width: 100%;
   height: 100%;
   filter: brightness(0.92);
 }
-.more-news a{
+.more-news a {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -193,8 +192,8 @@ header .login {
   display: flex;
   align-items: center;
   height: auto;
-} 
-.more-news a i{
+}
+.more-news a i {
   width: 30px;
   height: 30px;
   border: 1px solid #111;
@@ -203,26 +202,55 @@ header .login {
   margin-left: 20px;
   line-height: 30px;
 }
-.news .news-content{
+.news .news-content {
   width: 40%;
   height: 100%;
   padding: 30px 50px;
   box-sizing: border-box;
 }
-.news-content table{
+.news-content table {
   width: 100%;
   height: 100%;
 }
 
-.news-content .news-title{
+.news-content .news-title {
   width: 80%;
   font-weight: 900;
-  
 }
-.news-content .news-date{
+.news-content .news-date {
   width: 20%;
   font-size: 14px;
+  text-align: center;
 }
-.news .ranking{
+.news .ranking {
   width: 30%;
-}  
+  padding: 30px 50px;
+}
+
+.ranking .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.text .today {
+  font-size: 10px;
+  margin-left: 20px;
+}
+.ranking table {
+  width: 100%;
+  text-align: center;
+}
+.ranking table tr:nth-of-type(1) {
+  color: #e78111;
+}
+footer {
+  width: 100%;
+  padding: 20px 38px;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  color: rgba(31, 31, 31, 0.4);
+}
+footer p {
+  margin: 5px 0;
+}
